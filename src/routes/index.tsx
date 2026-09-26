@@ -221,7 +221,7 @@ function MonitoringDashboard() {
               <span className="label-caps">Risk</span>
               <span className="label-caps">Decision</span>
             </div>
-            <div className="max-h-[420px] overflow-y-auto">
+            <div className="h-[560px] overflow-y-auto xl:h-[calc(100%-2.25rem)]">
               {streamRows.map((t) => (
                 <TxnRow key={t.id} txn={t} onSelect={setSelected} />
               ))}
